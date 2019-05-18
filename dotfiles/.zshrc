@@ -58,7 +58,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='ee'
+export EDITOR='vim'
 export GPG_TTY=$(tty)
 
 # You may need to manually set your language environment
