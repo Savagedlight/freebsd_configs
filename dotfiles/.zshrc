@@ -88,6 +88,14 @@ export GPG_TTY=$(tty)
 alias gdiff="git diff origin/master -- *"
 alias lockme="title && clear && lock -np"
 
+peek() {
+	if [ -z "${TMUX}"]
+	then
+		$EDITOR $@
+	else
+		tmux split-window -p 33 "$EDITOR" "$@"
+	fi
+}
 export TOP="-j"
 
 ############################
