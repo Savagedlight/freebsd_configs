@@ -89,7 +89,7 @@ alias gdiff="git diff origin/master -- *"
 alias lockme="title && clear && lock -np"
 
 peek() {
-	if [ -z "${TMUX}"]
+	if [ -z "${TMUX}" ]
 	then
 		$EDITOR $@
 	else
