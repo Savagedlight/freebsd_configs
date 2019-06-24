@@ -42,6 +42,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 mkdir -p ~/.oh-my-zsh/custom/themes
 fetch -o - http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme > ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
 
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Symlink the users dotfiles.
 ./symlink_dotfiles.sh
 
