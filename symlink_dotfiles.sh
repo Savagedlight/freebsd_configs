@@ -9,3 +9,10 @@ do
 	dotfile="$(basename ${f})"
 	ln -si ${f} ~/${dotfile}
 done
+
+# Setup .ssh dotfiles
+mkdir -p ~/.ssh
+for f in $(find ${DOTFILES}/.ssh -maxdepth 1 -type f)
+do
+	dotfile="$(basename ${f})"
+done
